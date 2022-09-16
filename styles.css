@@ -1,0 +1,175 @@
+/*=============== GENERAL ======================*/
+body{
+    font-family: Arial; /*text font*/
+    background-color: lightgray; /*bg lowest layer coler*/
+    text-align: left;
+}
+
+p{
+    color: gray;
+}
+
+.parent-flex{ /*box*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; /*left to right*/
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+}
+
+.form-details { /*div class*/
+    text-align: left;
+    margin-bottom: 30px;
+    
+}
+
+.colum{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; 
+    align-content: center;
+    align-items: center;*/
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.row{ /*container div class form-details row*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+}
+
+/*=============== Left side ======================*/
+.child1{ /*left child box*/
+    width: 500px;
+    height: 650px;
+    background-color: white;
+    margin: 0;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+form /*form inside child1 (left one)*/
+{
+    /*background-color: red;*/
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 30px 30px;
+}
+
+.form-details input{ /*div class -> input tag*/
+    border: 1px solid black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 0.5em;
+}
+
+.form-details input[type="checkbox"] { /*div class -> input tag -> checkbox type*/
+    display: inline-block;
+    width: 5%;
+}
+
+/*=== BUTTONS ===*/
+button{
+    border-radius: 0.5em;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#signIn{
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#signGoogle{
+    color: black;
+}
+/*=== BUTTONS ===*/
+
+.signFree{
+    margin-left: 5px;
+}
+
+#forgotPass{
+    margin-left: auto;
+}
+
+/*=============== Right side ======================*/
+.child2{ /*right child box*/
+    width: 500px;
+    height: 650px;
+    background-image: url("https://iuiog.com/wp-content/uploads/2019/04/student-3500990_1920.jpg");
+    background-position: center;
+    background-size: cover; /*cover the entire div whith the image*/
+    margin: 0;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.form-details.testimony{ /*testimony box*/
+    max-width: 400px;
+    height: auto;
+    margin: 320px auto;
+    padding: 10px;
+    backdrop-filter:blur(5px) brightness(75%); /*adds blur efect to the div behind in this div area*/
+}
+
+.form-details.testimony p{
+    font-size: larger;
+}
+
+.form-details.testimony p,
+.form-details.testimony h2,
+.fa-solid.fa-star,
+.fa-solid.fa-circle-arrow-left,
+.fa-solid.fa-circle-arrow-right{
+    color: white;
+}
+
+.fa-solid.fa-circle-arrow-left,
+.fa-solid.fa-circle-arrow-right{
+    font-size: xx-large;
+}
+
+.testimony-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-content: center;
+    align-items: top;
+}
+
+#webDesAg{
+    color: lightgray;
+}
+
+#testimony-down-left{
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+#rightArrow{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+#sub-text{
+    font-size: small;
+}
+
+.testimony-up{
+    font-size: larger;
+}
